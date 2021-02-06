@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.3.42/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"1.0.1","target":"arcade","targetVersion":"1.3.42","repo":"rizal72/spacex"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.3.42/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"1.0.2","target":"arcade","targetVersion":"1.3.42","repo":"rizal72/spacex"}
 // total=1768325 new=10.06% cached=84.78% other=5.16%
 (function (ectx) {
 'use strict';
@@ -487,7 +487,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P86317(s) {
+function _main___P87146(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -947,56 +947,56 @@ switch (step) {
     s.callLocIdx = 84; s.pc = 44; return s.tmp_0;
   case 44:
     r0 = s.retval;
-    globals.counter___85989 = (r0);
+    globals.counter___86818 = (r0);
     s.tmp_0 = SpriteKind_create__P62167_mk(s);
     s.callLocIdx = 85; s.pc = 45; return s.tmp_0;
   case 45:
     r0 = s.retval;
-    globals.enemyProjectile___85992 = (r0);
+    globals.enemyProjectile___86821 = (r0);
     s.tmp_0 = controller_Button_onEvent__P61942_mk(s);
     s.tmp_0.arg0 = globals.B___61910;
     s.tmp_0.arg1 = 2049;
-    s.tmp_0.arg2 = inline__P85997;
+    s.tmp_0.arg2 = inline__P86826;
     s.callLocIdx = 93; s.pc = 46; return s.tmp_0;
   case 46:
     r0 = s.retval;
     s.tmp_0 = controller_Button_onEvent__P61942_mk(s);
     s.tmp_0.arg0 = globals.A___61909;
     s.tmp_0.arg1 = 2049;
-    s.tmp_0.arg2 = inline__P86029;
+    s.tmp_0.arg2 = inline__P86858;
     s.callLocIdx = 97; s.pc = 47; return s.tmp_0;
   case 47:
     r0 = s.retval;
     s.tmp_0 = sprites_onOverlap__P62146_mk(s);
     s.tmp_0.arg0 = globals.Player___62168;
     s.tmp_0.arg1 = globals.Food___62170;
-    s.tmp_0.arg2 = inline__P86080;
+    s.tmp_0.arg2 = inline__P86909;
     s.callLocIdx = 114; s.pc = 48; return s.tmp_0;
   case 48:
     r0 = s.retval;
     s.tmp_0 = sprites_onOverlap__P62146_mk(s);
     s.tmp_0.arg0 = 1;
     s.tmp_0.arg1 = globals.Enemy___62171;
-    s.tmp_0.arg2 = inline__P86097;
+    s.tmp_0.arg2 = inline__P86926;
     s.callLocIdx = 118; s.pc = 49; return s.tmp_0;
   case 49:
     r0 = s.retval;
     s.tmp_0 = sprites_onOverlap__P62146_mk(s);
     s.tmp_0.arg0 = globals.Player___62168;
     s.tmp_0.arg1 = globals.Enemy___62171;
-    s.tmp_0.arg2 = inline__P86111;
+    s.tmp_0.arg2 = inline__P86940;
     s.callLocIdx = 122; s.pc = 50; return s.tmp_0;
   case 50:
     r0 = s.retval;
-    globals.enemyShot___86123 = (null);
-    globals.enemyShip___86125 = (null);
-    globals.bomb___86127 = (null);
-    globals.star___86129 = (null);
-    globals.bombCountN___86069 = (null);
-    globals.bombCount___86060 = (null);
-    globals.playerShot___86031 = (null);
-    globals.playerShip___86004 = (null);
-    globals.bombs___86000 = (0);
+    globals.enemyShot___86952 = (null);
+    globals.enemyShip___86954 = (null);
+    globals.bomb___86956 = (null);
+    globals.star___86958 = (null);
+    globals.bombCountN___86898 = (null);
+    globals.bombCount___86889 = (null);
+    globals.playerShot___86860 = (null);
+    globals.playerShip___86833 = (null);
+    globals.bombs___86829 = (0);
     s.tmp_0 = scene_setBackgroundImage__P62494_mk(s);
     s.tmp_1 = helpers_getImageByName__P62896_mk(s);
     s.tmp_1.arg0 = "intro";
@@ -1018,30 +1018,30 @@ switch (step) {
     s.callLocIdx = 126; s.pc = 54; return s.tmp_0;
   case 54:
     r0 = s.retval;
-    s.tmp_0 = startGame__P86039_mk(s);
+    s.tmp_0 = startGame__P86868_mk(s);
     s.callLocIdx = 127; s.pc = 55; return s.tmp_0;
   case 55:
     r0 = s.retval;
     s.tmp_0 = game_onUpdate__P62578_mk(s);
-    s.tmp_0.arg0 = inline__P86137;
+    s.tmp_0.arg0 = inline__P86966;
     s.callLocIdx = 137; s.pc = 56; return s.tmp_0;
   case 56:
     r0 = s.retval;
     s.tmp_0 = game_onUpdateInterval__P62579_mk(s);
     r0 = pxsim.Math_.randomRange(30000, 60000);
     s.tmp_0.arg0 = r0;
-    s.tmp_0.arg1 = inline__P86168;
+    s.tmp_0.arg1 = inline__P86997;
     s.callLocIdx = 146; s.pc = 57; return s.tmp_0;
   case 57:
     r0 = s.retval;
     s.tmp_0 = forever__P61879_mk(s);
-    s.tmp_0.arg0 = inline__P86198;
+    s.tmp_0.arg0 = inline__P87027;
     s.callLocIdx = 151; s.pc = 58; return s.tmp_0;
   case 58:
     r0 = s.retval;
     s.tmp_0 = game_onUpdateInterval__P62579_mk(s);
     s.tmp_0.arg0 = 500;
-    s.tmp_0.arg1 = inline__P86204;
+    s.tmp_0.arg1 = inline__P87033;
     s.callLocIdx = 167; s.pc = 59; return s.tmp_0;
   case 59:
     r0 = s.retval;
@@ -1049,13 +1049,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P86317.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/Timers/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P86317.continuations = [  ]
+_main___P87146.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/Timers/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P87146.continuations = [  ]
 
-function _main___P86317_mk(s) {
+function _main___P87146_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P86317, depth: s.depth + 1,
+        parent: s, fn: _main___P87146, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1994,7 +1994,7 @@ function inline__P65904_mk(s) {
 
 
 
-function inline__P85997(s) {
+function inline__P86826(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2004,38 +2004,38 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.enemyShip___86008 = undefined;
-    s.unnamed1358___U1 = undefined;
-    s.unnamed1359___U2 = undefined;
-    r0 = (globals.bombs___86000 > 0);
+    s.enemyShip___86837 = undefined;
+    s.unnamed1422___U1 = undefined;
+    s.unnamed1423___U2 = undefined;
+    r0 = (globals.bombs___86829 > 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 3; continue; }
     s.tmp_1 = Sprite_startEffect__P62113_mk(s);
-    s.tmp_1.arg0 = globals.playerShip___86004;
+    s.tmp_1.arg0 = globals.playerShip___86833;
     s.tmp_1.arg1 = globals.halo___62843;
     s.tmp_1.arg2 = 1500;
     s.callLocIdx = 86; s.pc = 5; return s.tmp_1;
   case 5:
     r0 = s.retval;
-    s.enemyShip___86008 = (undefined);
+    s.enemyShip___86837 = (undefined);
     s.tmp_0 = sprites_allOfKind__P62007_mk(s);
     s.tmp_0.arg0 = globals.Enemy___62171;
     s.callLocIdx = 87; s.pc = 6; return s.tmp_0;
   case 6:
     r0 = s.retval;
-    s.unnamed1358___U1 = (r0);
-    s.unnamed1359___U2 = (0);
+    s.unnamed1422___U1 = (r0);
+    s.unnamed1423___U2 = (0);
   case 1:
-    s.tmp_0 = r0 = s.unnamed1359___U2;
-    r0 = pxsim_Array__length(s.unnamed1358___U1);
+    s.tmp_0 = r0 = s.unnamed1423___U2;
+    r0 = pxsim_Array__length(s.unnamed1422___U1);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
     if (!r0) { step = 2; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed1358___U1, s.unnamed1359___U2);
-    s.enemyShip___86008 = (r0);
+    r0 = pxsim_Array__getAt(s.unnamed1422___U1, s.unnamed1423___U2);
+    s.enemyShip___86837 = (r0);
     s.tmp_2 = Sprite_destroy__P62127_mk(s);
-    s.tmp_2.arg0 = s.enemyShip___86008;
+    s.tmp_2.arg0 = s.enemyShip___86837;
     s.tmp_2.arg1 = globals.disintegrate___62845;
     s.tmp_2.arg2 = 200;
     s.callLocIdx = 88; s.pc = 7; return s.tmp_2;
@@ -2046,11 +2046,11 @@ switch (step) {
     s.callLocIdx = 89; s.pc = 8; return s.tmp_0;
   case 8:
     r0 = s.retval;
-    r0 = (s.unnamed1359___U2 + 1);
-    s.unnamed1359___U2 = (r0);
+    r0 = (s.unnamed1423___U2 + 1);
+    s.unnamed1423___U2 = (r0);
     { step = 1; continue; }
   case 2:
-    s.unnamed1358___U1 = (undefined);
+    s.unnamed1422___U1 = (undefined);
     s.tmp_0 = music_Melody_play__P62989_mk(s);
     s.tmp_0.arg0 = globals.pewPew___63006;
     s.tmp_0.arg1 = 255;
@@ -2069,34 +2069,34 @@ switch (step) {
     s.callLocIdx = 92; s.pc = 11; return s.tmp_0;
   case 11:
     r0 = s.retval;
-    r0 = (globals.bombs___86000 + -1);
-    globals.bombs___86000 = (r0);
+    r0 = (globals.bombs___86829 + -1);
+    globals.bombs___86829 = (r0);
   case 3:
   case 4:
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-inline__P85997.info = {"start":234,"length":375,"line":9,"column":52,"endLine":21,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P86826.info = {"start":234,"length":375,"line":9,"column":52,"endLine":21,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P85997_mk(s) {
+function inline__P86826_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P85997, depth: s.depth + 1,
+        parent: s, fn: inline__P86826, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
   tmp_2: undefined,
-  enemyShip___86008: undefined,
-  unnamed1358___U1: undefined,
-  unnamed1359___U2: undefined,
+  enemyShip___86837: undefined,
+  unnamed1422___U1: undefined,
+  unnamed1423___U2: undefined,
 } }
 
 
 
 
 
-function inline__P86029(s) {
+function inline__P86858(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2113,13 +2113,13 @@ switch (step) {
   case 2:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
-    s.tmp_0.arg1 = globals.playerShip___86004;
+    s.tmp_0.arg1 = globals.playerShip___86833;
     s.tmp_0.arg2 = 200;
     s.tmp_0.arg3 = 0;
     s.callLocIdx = 95; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
-    globals.playerShot___86031 = (r0);
+    globals.playerShot___86860 = (r0);
     s.tmp_0 = music_Melody_play__P62989_mk(s);
     s.tmp_0.arg0 = globals.pewPew___63006;
     s.tmp_0.arg1 = 255;
@@ -2130,12 +2130,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P86029.info = {"start":663,"length":131,"line":22,"column":52,"endLine":25,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P86858.info = {"start":663,"length":131,"line":22,"column":52,"endLine":25,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P86029_mk(s) {
+function inline__P86858_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P86029, depth: s.depth + 1,
+        parent: s, fn: inline__P86858, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2145,7 +2145,7 @@ function inline__P86029_mk(s) {
 
 
 
-function inline__P86080(s) {
+function inline__P86909(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2160,7 +2160,7 @@ switch (step) {
       s.arg1 = (s.lambdaArgs[1]);
       s.lambdaArgs = null;
     }
-    r0 = (globals.bombs___86000 < 3);
+    r0 = (globals.bombs___86829 < 3);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
@@ -2177,20 +2177,20 @@ switch (step) {
     s.callLocIdx = 113; s.pc = 4; return s.tmp_0;
   case 4:
     r0 = s.retval;
-    r0 = (globals.bombs___86000 + 1);
-    globals.bombs___86000 = (r0);
+    r0 = (globals.bombs___86829 + 1);
+    globals.bombs___86829 = (r0);
   case 1:
   case 2:
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-inline__P86080.info = {"start":21730,"length":156,"line":165,"column":54,"endLine":171,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","otherSprite"]}
+inline__P86909.info = {"start":21730,"length":156,"line":165,"column":54,"endLine":171,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","otherSprite"]}
 
-function inline__P86080_mk(s) {
+function inline__P86909_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P86080, depth: s.depth + 1,
+        parent: s, fn: inline__P86909, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2202,7 +2202,7 @@ function inline__P86080_mk(s) {
 
 
 
-function inline__P86097(s) {
+function inline__P86926(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2240,12 +2240,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P86097.info = {"start":21947,"length":132,"line":172,"column":59,"endLine":176,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","otherSprite"]}
+inline__P86926.info = {"start":21947,"length":132,"line":172,"column":59,"endLine":176,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","otherSprite"]}
 
-function inline__P86097_mk(s) {
+function inline__P86926_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P86097, depth: s.depth + 1,
+        parent: s, fn: inline__P86926, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -2256,7 +2256,7 @@ function inline__P86097_mk(s) {
 
 
 
-function inline__P86111(s) {
+function inline__P86940(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2293,12 +2293,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P86111.info = {"start":22136,"length":129,"line":177,"column":55,"endLine":181,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","otherSprite"]}
+inline__P86940.info = {"start":22136,"length":129,"line":177,"column":55,"endLine":181,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","otherSprite"]}
 
-function inline__P86111_mk(s) {
+function inline__P86940_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P86111, depth: s.depth + 1,
+        parent: s, fn: inline__P86940, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -2309,7 +2309,7 @@ function inline__P86111_mk(s) {
 
 
 
-function inline__P86137(s) {
+function inline__P86966(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2340,9 +2340,9 @@ switch (step) {
     s.callLocIdx = 130; s.pc = 4; return s.tmp_2;
   case 4:
     r0 = s.retval;
-    globals.star___86129 = (r0);
+    globals.star___86958 = (r0);
     s.tmp_0 = Sprite_setPosition__P62110_mk(s);
-    s.tmp_0.arg0 = globals.star___86129;
+    s.tmp_0.arg0 = globals.star___86958;
     r0 = pxsim_ImageMethods.width(globals.screen___61833);
     s.tmp_0.arg1 = r0;
     r0 = pxsim_ImageMethods.height(globals.screen___61833);
@@ -2353,14 +2353,14 @@ switch (step) {
   case 6:
     r0 = s.retval;
     s.tmp_0 = Sprite_setFlag__P62119_mk(s);
-    s.tmp_0.arg0 = globals.star___86129;
+    s.tmp_0.arg0 = globals.star___86958;
     s.tmp_0.arg1 = 7168;
     s.tmp_0.arg2 = true;
     s.callLocIdx = 134; s.pc = 7; return s.tmp_0;
   case 7:
     r0 = s.retval;
     s.tmp_0 = Sprite_setFlag__P62119_mk(s);
-    s.tmp_0.arg0 = globals.star___86129;
+    s.tmp_0.arg0 = globals.star___86958;
     s.tmp_0.arg1 = 4;
     s.tmp_0.arg2 = true;
     s.callLocIdx = 135; s.pc = 8; return s.tmp_0;
@@ -2369,8 +2369,8 @@ switch (step) {
   case 1:
   case 2:
     s.tmp_0 = Sprite_say__P62112_mk(s);
-    s.tmp_0.arg0 = globals.bombCountN___86069;
-    s.tmp_0.arg1 = globals.bombs___86000;
+    s.tmp_0.arg0 = globals.bombCountN___86898;
+    s.tmp_0.arg1 = globals.bombs___86829;
     s.tmp_0.arg2 = undefined;
     s.tmp_0.arg3 = 15;
     s.tmp_0.arg4 = 1;
@@ -2381,12 +2381,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P86137.info = {"start":22702,"length":348,"line":195,"column":14,"endLine":203,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P86966.info = {"start":22702,"length":348,"line":195,"column":14,"endLine":203,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P86137_mk(s) {
+function inline__P86966_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P86137, depth: s.depth + 1,
+        parent: s, fn: inline__P86966, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2398,7 +2398,7 @@ function inline__P86137_mk(s) {
 
 
 
-function inline__P86168(s) {
+function inline__P86997(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2419,9 +2419,9 @@ switch (step) {
     s.callLocIdx = 139; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
-    globals.bomb___86127 = (r0);
+    globals.bomb___86956 = (r0);
     s.tmp_0 = Sprite_setVelocity__P62111_mk(s);
-    s.tmp_0.arg0 = globals.bomb___86127;
+    s.tmp_0.arg0 = globals.bomb___86956;
     r0 = pxsim.Math_.randomRange(-50, -80);
     s.tmp_0.arg1 = r0;
     r0 = pxsim.Math_.randomRange(5, 20);
@@ -2430,14 +2430,14 @@ switch (step) {
   case 3:
     r0 = s.retval;
     s.tmp_0 = Sprite_left__P62101_mk(s);
-    s.tmp_0.arg0 = globals.bomb___86127;
+    s.tmp_0.arg0 = globals.bomb___86956;
     r0 = pxsim_ImageMethods.width(globals.screen___61833);
     s.tmp_0.arg1 = r0;
     s.callLocIdx = 142; s.pc = 4; return s.tmp_0;
   case 4:
     r0 = s.retval;
     s.tmp_0 = Sprite_y__P62066_mk(s);
-    s.tmp_0.arg0 = globals.bomb___86127;
+    s.tmp_0.arg0 = globals.bomb___86956;
     r0 = pxsim_ImageMethods.height(globals.screen___61833);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 - 6);
@@ -2448,7 +2448,7 @@ switch (step) {
   case 5:
     r0 = s.retval;
     s.tmp_0 = Sprite_setFlag__P62119_mk(s);
-    s.tmp_0.arg0 = globals.bomb___86127;
+    s.tmp_0.arg0 = globals.bomb___86956;
     s.tmp_0.arg1 = 4;
     s.tmp_0.arg2 = true;
     s.callLocIdx = 145; s.pc = 6; return s.tmp_0;
@@ -2458,12 +2458,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P86168.info = {"start":23097,"length":267,"line":204,"column":45,"endLine":210,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P86997.info = {"start":23097,"length":267,"line":204,"column":45,"endLine":210,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P86168_mk(s) {
+function inline__P86997_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P86168, depth: s.depth + 1,
+        parent: s, fn: inline__P86997, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2474,7 +2474,7 @@ function inline__P86168_mk(s) {
 
 
 
-function inline__P86198(s) {
+function inline__P87027(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2512,12 +2512,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P86198.info = {"start":23374,"length":203,"line":211,"column":8,"endLine":216,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P87027.info = {"start":23374,"length":203,"line":211,"column":8,"endLine":216,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P86198_mk(s) {
+function inline__P87027_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P86198, depth: s.depth + 1,
+        parent: s, fn: inline__P87027, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
 } }
@@ -2526,7 +2526,7 @@ function inline__P86198_mk(s) {
 
 
 
-function inline__P86204(s) {
+function inline__P87033(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2547,9 +2547,9 @@ switch (step) {
     s.callLocIdx = 153; s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
-    globals.enemyShip___86125 = (r0);
+    globals.enemyShip___86954 = (r0);
     s.tmp_0 = animation_runImageAnimation__P62946_mk(s);
-    s.tmp_0.arg0 = globals.enemyShip___86125;
+    s.tmp_0.arg0 = globals.enemyShip___86954;
     s.tmp_1 = helpers_getAnimationByName__P62897_mk(s);
     s.tmp_1.arg0 = "enemy_anim";
     s.callLocIdx = 154; s.pc = 6; return s.tmp_1;
@@ -2562,7 +2562,7 @@ switch (step) {
   case 5:
     r0 = s.retval;
     s.tmp_0 = Sprite_setVelocity__P62111_mk(s);
-    s.tmp_0.arg0 = globals.enemyShip___86125;
+    s.tmp_0.arg0 = globals.enemyShip___86954;
     r0 = pxsim.Math_.randomRange(-50, -80);
     s.tmp_0.arg1 = r0;
     s.tmp_0.arg2 = 0;
@@ -2570,14 +2570,14 @@ switch (step) {
   case 7:
     r0 = s.retval;
     s.tmp_0 = Sprite_left__P62101_mk(s);
-    s.tmp_0.arg0 = globals.enemyShip___86125;
+    s.tmp_0.arg0 = globals.enemyShip___86954;
     r0 = pxsim_ImageMethods.width(globals.screen___61833);
     s.tmp_0.arg1 = r0;
     s.callLocIdx = 158; s.pc = 8; return s.tmp_0;
   case 8:
     r0 = s.retval;
     s.tmp_0 = Sprite_y__P62066_mk(s);
-    s.tmp_0.arg0 = globals.enemyShip___86125;
+    s.tmp_0.arg0 = globals.enemyShip___86954;
     r0 = pxsim_ImageMethods.height(globals.screen___61833);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 - 6);
@@ -2588,7 +2588,7 @@ switch (step) {
   case 9:
     r0 = s.retval;
     s.tmp_0 = Sprite_setFlag__P62119_mk(s);
-    s.tmp_0.arg0 = globals.enemyShip___86125;
+    s.tmp_0.arg0 = globals.enemyShip___86954;
     s.tmp_0.arg1 = 4;
     s.tmp_0.arg2 = true;
     s.callLocIdx = 161; s.pc = 10; return s.tmp_0;
@@ -2609,21 +2609,21 @@ switch (step) {
   case 13:
     r0 = s.retval;
     s.tmp_2.arg0 = r0;
-    s.tmp_2.arg1 = globals.enemyShip___86125;
+    s.tmp_2.arg1 = globals.enemyShip___86954;
     s.tmp_2.arg2 = -120;
     s.tmp_2.arg3 = 0;
     s.callLocIdx = 164; s.pc = 12; return s.tmp_2;
   case 12:
     r0 = s.retval;
-    globals.enemyShot___86123 = (r0);
+    globals.enemyShot___86952 = (r0);
     s.tmp_0 = Sprite_setKind__P62109_mk(s);
-    s.tmp_0.arg0 = globals.enemyShot___86123;
+    s.tmp_0.arg0 = globals.enemyShot___86952;
     s.tmp_0.arg1 = globals.Enemy___62171;
     s.callLocIdx = 165; s.pc = 14; return s.tmp_0;
   case 14:
     r0 = s.retval;
     s.tmp_0 = Sprite_setFlag__P62119_mk(s);
-    s.tmp_0.arg0 = globals.enemyShot___86123;
+    s.tmp_0.arg0 = globals.enemyShot___86952;
     s.tmp_0.arg1 = 4;
     s.tmp_0.arg2 = true;
     s.callLocIdx = 166; s.pc = 15; return s.tmp_0;
@@ -2635,12 +2635,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P86204.info = {"start":23606,"length":627,"line":217,"column":27,"endLine":234,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
+inline__P87033.info = {"start":23606,"length":627,"line":217,"column":27,"endLine":234,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P86204_mk(s) {
+function inline__P87033_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P86204, depth: s.depth + 1,
+        parent: s, fn: inline__P87033, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -23838,7 +23838,7 @@ function game_onUpdate__P62578_mk(s) {
 
 
 
-function startGame__P86039(s) {
+function startGame__P86868(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -23849,7 +23849,7 @@ switch (step) {
   case 0:
 
     s.tmp_0 = scene_setBackgroundImage__P62494_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex86042);
+    r0 = pxsim.image.ofBuffer(_hex86871);
     s.tmp_0.arg0 = r0;
     s.callLocIdx = 98; s.pc = 1; return s.tmp_0;
   case 1:
@@ -23865,9 +23865,9 @@ switch (step) {
     s.callLocIdx = 100; s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
-    globals.playerShip___86004 = (r0);
+    globals.playerShip___86833 = (r0);
     s.tmp_0 = animation_runImageAnimation__P62946_mk(s);
-    s.tmp_0.arg0 = globals.playerShip___86004;
+    s.tmp_0.arg0 = globals.playerShip___86833;
     s.tmp_1 = helpers_getAnimationByName__P62897_mk(s);
     s.tmp_1.arg0 = "ship_anim";
     s.callLocIdx = 101; s.pc = 5; return s.tmp_1;
@@ -23880,14 +23880,14 @@ switch (step) {
   case 4:
     r0 = s.retval;
     s.tmp_0 = Sprite_setFlag__P62119_mk(s);
-    s.tmp_0.arg0 = globals.playerShip___86004;
+    s.tmp_0.arg0 = globals.playerShip___86833;
     s.tmp_0.arg1 = 8;
     s.tmp_0.arg2 = true;
     s.callLocIdx = 103; s.pc = 6; return s.tmp_0;
   case 6:
     r0 = s.retval;
     s.tmp_0 = controller_moveSprite__P61984_mk(s);
-    s.tmp_0.arg0 = globals.playerShip___86004;
+    s.tmp_0.arg0 = globals.playerShip___86833;
     s.tmp_0.arg1 = 100;
     s.tmp_0.arg2 = 100;
     s.callLocIdx = 104; s.pc = 7; return s.tmp_0;
@@ -23898,7 +23898,7 @@ switch (step) {
     s.callLocIdx = 105; s.pc = 8; return s.tmp_0;
   case 8:
     r0 = s.retval;
-    globals.bombs___86000 = (3);
+    globals.bombs___86829 = (3);
     s.tmp_0 = sprites_create__P62006_mk(s);
     s.tmp_1 = helpers_getImageByName__P62896_mk(s);
     s.tmp_1.arg0 = "bcounter";
@@ -23906,13 +23906,13 @@ switch (step) {
   case 10:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
-    s.tmp_0.arg1 = globals.counter___85989;
+    s.tmp_0.arg1 = globals.counter___86818;
     s.callLocIdx = 107; s.pc = 9; return s.tmp_0;
   case 9:
     r0 = s.retval;
-    globals.bombCount___86060 = (r0);
+    globals.bombCount___86889 = (r0);
     s.tmp_0 = Sprite_setPosition__P62110_mk(s);
-    s.tmp_0.arg0 = globals.bombCount___86060;
+    s.tmp_0.arg0 = globals.bombCount___86889;
     s.tmp_0.arg1 = 40;
     s.tmp_0.arg2 = 5;
     s.callLocIdx = 108; s.pc = 11; return s.tmp_0;
@@ -23925,13 +23925,13 @@ switch (step) {
   case 13:
     r0 = s.retval;
     s.tmp_0.arg0 = r0;
-    s.tmp_0.arg1 = globals.counter___85989;
+    s.tmp_0.arg1 = globals.counter___86818;
     s.callLocIdx = 110; s.pc = 12; return s.tmp_0;
   case 12:
     r0 = s.retval;
-    globals.bombCountN___86069 = (r0);
+    globals.bombCountN___86898 = (r0);
     s.tmp_0 = Sprite_setPosition__P62110_mk(s);
-    s.tmp_0.arg0 = globals.bombCountN___86069;
+    s.tmp_0.arg0 = globals.bombCountN___86898;
     s.tmp_0.arg1 = 52;
     s.tmp_0.arg2 = 5;
     s.callLocIdx = 111; s.pc = 14; return s.tmp_0;
@@ -23941,18 +23941,18 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-startGame__P86039.info = {"start":796,"length":20879,"line":26,"column":0,"endLine":164,"endColumn":1,"fileName":"main.ts","functionName":"startGame","argumentNames":[]}
+startGame__P86868.info = {"start":796,"length":20879,"line":26,"column":0,"endLine":164,"endColumn":1,"fileName":"main.ts","functionName":"startGame","argumentNames":[]}
 
-function startGame__P86039_mk(s) {
+function startGame__P86868_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: startGame__P86039, depth: s.depth + 1,
+        parent: s, fn: startGame__P86868, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
 } }
 
-const _hex86042 = pxsim.BufferMethods.createBufferFromHex("8704a00078000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
+const _hex86871 = pxsim.BufferMethods.createBufferFromHex("8704a00078000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
 
 
 
@@ -58147,7 +58147,7 @@ const animation_PathNode__C62912_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["transparency16___63756","counter___85989","enemyProjectile___85992","bombs___86000","playerShip___86004","playerShot___86031","star___86129","bombCountN___86069","bomb___86127","enemyShip___86125","enemyShot___86123","bombCount___86060"])
+const breakpoints = setupDebugger(1, ["transparency16___63756","counter___86818","enemyProjectile___86821","bombs___86829","playerShip___86833","playerShot___86860","star___86958","bombCountN___86898","bomb___86956","enemyShip___86954","enemyShot___86952","bombCount___86889"])
 
-return _main___P86317
+return _main___P87146
 })
