@@ -377,6 +377,7 @@ scene.setBackgroundImage(img`
     ....................................................2...........................................................................................................
     ................................................................................................................................................................
     `)
+music.setVolume(100)
 game.splash("Press 'A' to Play - SpaceX: a game by B&A")
 startGame()
 game.onUpdate(function () {
@@ -396,7 +397,6 @@ game.onUpdateInterval(randint(30000, 60000), function () {
     bomb.setFlag(SpriteFlag.AutoDestroy, true)
 })
 forever(function () {
-    music.setVolume(20)
     music.playMelody("E B C5 A B G A F ", 120)
     music.playMelody("E B C5 A B G A F ", 120)
     music.playMelody("E D G F B A C5 B ", 120)
