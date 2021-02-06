@@ -207,7 +207,7 @@ scene.setBackgroundImage(assets.image`
     intro
 `)
 music.setVolume(100)
-game.splash("Press 'A' to Play - SpaceX: a game by B&A")
+game.splash("Press 'A' to shot - SpaceX: a game by B&A", "Press 'B' to destroy all enemies on screen")
 startGame()
 game.onUpdate(function on_on_update() {
     
@@ -253,7 +253,7 @@ game.onUpdateInterval(500, function on_update_interval2() {
     if (Math.percentChance(50)) {
         enemyShot = sprites.createProjectileFromSprite(assets.image`
             enemyshot
-        `, enemyShip2, -200, 0)
+        `, enemyShip2, -120, 0)
         enemyShot.setKind(SpriteKind.Enemy)
         enemyShot.setFlag(SpriteFlag.AutoDestroy, true)
     }
