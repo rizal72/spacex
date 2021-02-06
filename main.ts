@@ -232,7 +232,7 @@ function startGame () {
 }
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     if (bombs < 3) {
-        otherSprite.destroy(effects.halo, 1000)
+        otherSprite.destroy(effects.halo, 200)
         music.powerUp.play()
         bombs += 1
     }
@@ -384,6 +384,7 @@ game.onUpdate(function () {
         star = sprites.createProjectileFromSide(assets.image`image3`, randint(-80, -100), 0)
         star.setPosition(scene.screenWidth(), randint(0, scene.screenHeight()))
         star.setFlag(SpriteFlag.Ghost, true)
+        star.setFlag(SpriteFlag.AutoDestroy, true)
     }
     bCountN.say(bombs)
 })
