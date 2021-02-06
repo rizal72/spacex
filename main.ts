@@ -191,7 +191,7 @@ let playerShip: Sprite = null
 let bombs = 0
 scene.setBackgroundImage(assets.image`intro`)
 music.setVolume(100)
-game.splash("Press 'A' to shot - SpaceX: a game by B&A", "Press 'B' to destroy all enemies on screen")
+game.splash("Press 'A' to fire laser", "Press 'B' for Nuclear Bomb")
 startGame()
 game.onUpdate(function () {
     if (Math.percentChance(25)) {
