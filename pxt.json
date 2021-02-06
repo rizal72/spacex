@@ -5,8 +5,7 @@
         "device": "*",
         "darts": "*",
         "Timers": "github:microsoft/arcade-timers#v1.1.0",
-        "animation": "*",
-        "palette": "*"
+        "animation": "*"
     },
     "files": [
         "main.blocks",
