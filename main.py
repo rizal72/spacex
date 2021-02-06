@@ -1,7 +1,3 @@
-class ActionKind(Enum):
-    Walking = 0
-    Idle = 1
-    Jumping = 2
 @namespace
 class SpriteKind:
     counter = SpriteKind.create()
@@ -207,8 +203,7 @@ scene.set_background_image(assets.image("""
     intro
 """))
 music.set_volume(100)
-game.splash("Press 'A' to shot - SpaceX: a game by B&A",
-    "Press 'B' to destroy all enemies on screen")
+game.splash("Press 'A' to shoot laser", "Press 'B' for Nuclear Bomb")
 startGame()
 
 def on_on_update():
