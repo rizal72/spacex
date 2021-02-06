@@ -1,7 +1,3 @@
-class ActionKind(Enum):
-    Walking = 0
-    Idle = 1
-    Jumping = 2
 @namespace
 class SpriteKind:
     counter = SpriteKind.create()
