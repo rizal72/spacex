@@ -207,8 +207,7 @@ scene.set_background_image(assets.image("""
     intro
 """))
 music.set_volume(100)
-game.splash("Press 'A' to shot - SpaceX: a game by B&A",
-    "Press 'B' to destroy all enemies on screen")
+game.splash("Press 'A' to shoot laser", "Press 'B' for Nuclear Bomb")
 startGame()
 
 def on_on_update():
@@ -256,7 +255,7 @@ def on_update_interval2():
     enemyShip2.left = scene.screen_width()
     enemyShip2.y = randint(6, scene.screen_height() - 6)
     enemyShip2.set_flag(SpriteFlag.AUTO_DESTROY, True)
-    if Math.percent_chance(50):
+    if Math.percent_chance(33):
         enemyShot = sprites.create_projectile_from_sprite(assets.image("""
             enemyshot
         """), enemyShip2, -120, 0)

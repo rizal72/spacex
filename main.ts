@@ -191,7 +191,7 @@ let playerShip: Sprite = null
 let bombs = 0
 scene.setBackgroundImage(assets.image`intro`)
 music.setVolume(100)
-game.splash("Press 'A' to shot - SpaceX: a game by B&A", "Press 'B' to destroy all enemies on screen")
+game.splash("Press 'A' to shoot laser", "Press 'B' for Nuclear Bomb")
 startGame()
 game.onUpdate(function () {
     if (Math.percentChance(25)) {
@@ -227,7 +227,7 @@ game.onUpdateInterval(500, function () {
     enemyShip.left = scene.screenWidth()
     enemyShip.y = randint(6, scene.screenHeight() - 6)
     enemyShip.setFlag(SpriteFlag.AutoDestroy, true)
-    if (Math.percentChance(50)) {
+    if (Math.percentChance(33)) {
         enemyShot = sprites.createProjectileFromSprite(assets.image`enemyshot`, enemyShip, -120, 0)
         enemyShot.setKind(SpriteKind.Enemy)
         enemyShot.setFlag(SpriteFlag.AutoDestroy, true)
