@@ -155,6 +155,7 @@ function startGame () {
     bombs = 3
     bombCount = sprites.create(assets.image`bcounter`, SpriteKind.counter)
     bombCount.setPosition(40, 5)
+    bombCount.z = 100
     bombCountN = sprites.create(assets.image`image5`, SpriteKind.counter)
     bombCountN.setPosition(52, 5)
 }
@@ -194,6 +195,7 @@ game.onUpdate(function () {
         star.setPosition(scene.screenWidth(), randint(0, scene.screenHeight()))
         star.setFlag(SpriteFlag.Ghost, true)
         star.setFlag(SpriteFlag.AutoDestroy, true)
+        star.z = -100
     }
     bombCountN.say(bombs)
 })
