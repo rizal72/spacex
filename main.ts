@@ -205,11 +205,10 @@ forever(function () {
     music.playMelody("E D G F B A C5 B ", 120)
     music.playMelody("E D G F B A C5 B ", 120)
 })
-game.onUpdateInterval(randint(30000, 40000), function () {
-    bomb = sprites.create(assets.image`bomb`, SpriteKind.Food)
-    bomb.setVelocity(randint(-50, -80), randint(5, 20))
-    bomb.left = scene.screenWidth()
-    bomb.y = randint(6, scene.screenHeight() - 6)
+game.onUpdateInterval(30000, function () {
+    bomb = sprites.createProjectileFromSide(assets.image`bomb`, randint(-50, -80), randint(10, 20))
+    bomb.setKind(SpriteKind.Food)
+    bomb.y = randint(6, scene.screenHeight() / 2)
     bomb.setFlag(SpriteFlag.AutoDestroy, true)
 })
 game.onUpdateInterval(500, function () {
