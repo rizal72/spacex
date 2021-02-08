@@ -186,7 +186,8 @@ let playerShot: Sprite = null
 let playerShip: Sprite = null
 let bombs = 0
 scene.setBackgroundImage(assets.image`intro`)
-music.setVolume(100)
+music.setVolume(64)
+let music2 = true
 game.splash("Press 'A' to shoot laser", "Press 'B' for Nuclear Bomb")
 startGame()
 game.onUpdate(function () {
